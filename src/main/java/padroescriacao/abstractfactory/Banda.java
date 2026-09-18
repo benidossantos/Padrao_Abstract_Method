@@ -1,6 +1,6 @@
 package padroescriacao.abstractfactory;
 
-public interface Midia {
+public interface Banda {
 
     String emitir();
 }

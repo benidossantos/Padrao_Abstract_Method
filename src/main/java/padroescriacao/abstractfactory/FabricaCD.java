@@ -3,12 +3,12 @@ package padroescriacao.abstractfactory;
 public class FabricaCD implements FabricaAbstrata {
 
     @Override
-    public Midia createMidia() {
-        return new MidiaCD();
+    public Artista createArtista() {
+        return new ArtistaCD();
     }
 
     @Override
-    public Capa createCapa() {
-        return new CapaCD();
+    public Banda createBanda() {
+        return new BandaCD();
     }
 }

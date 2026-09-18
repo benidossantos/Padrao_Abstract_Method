@@ -2,19 +2,19 @@ package padroescriacao.abstractfactory;
 
 public class Loja {
 
-    private Midia midia;
-    private Capa capa;
+    private Artista artista;
+    private Banda banda;
 
     public Loja (FabricaAbstrata fabrica) {
-        this.midia = fabrica.createMidia();
-        this.capa = fabrica.createCapa();
+        this.artista = fabrica.createArtista();
+        this.banda = fabrica.createBanda();
     }
 
-    public String emitirMidia() {
-        return this.midia.emitir();
+    public String emitirArtista() {
+        return this.artista.emitir();
     }
 
-    public String emitirCapa() {
-        return this.capa.emitir();
+    public String emitirBanda() {
+        return this.banda.emitir();
     }
 }
