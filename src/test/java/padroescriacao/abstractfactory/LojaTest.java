@@ -7,18 +7,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class LojaTest {
 
     @Test
-    void deveEmitirMidiaECapaDeVinilQuandoUsarFabricaVinil() {
+    void deveEmitirArtistaEBandaDeVinilQuandoUsarFabricaVinil() {
         Loja loja = new Loja(new FabricaVinil());
 
-        assertEquals("Mídia em Disco de Vinil", loja.emitirMidia());
-        assertEquals("Capa de Disco de Vinil", loja.emitirCapa());
+        assertEquals("Artista Solo lançado em Disco de Vinil", loja.emitirArtista());
+        assertEquals("Banda lançada em Disco de Vinil", loja.emitirBanda());
     }
 
     @Test
-    void deveEmitirMidiaECapaDeCDQuandoUsarFabricaCD() {
+    void deveEmitirArtistaEBandaDeCDQuandoUsarFabricaCD() {
         Loja loja = new Loja(new FabricaCD());
 
-        assertEquals("Mídia em CD", loja.emitirMidia());
-        assertEquals("Capa de CD", loja.emitirCapa());
+        assertEquals("Artista Solo lançado em CD", loja.emitirArtista());
+        assertEquals("Banda lançada em CD", loja.emitirBanda());
     }
 }

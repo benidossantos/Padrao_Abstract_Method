@@ -1,6 +1,6 @@
 package padroescriacao.abstractfactory;
 
-public interface Capa {
+public interface Artista {
 
     String emitir();
 }

@@ -9,12 +9,12 @@ class FabricaVinilTest {
     private final FabricaAbstrata fabrica = new FabricaVinil();
 
     @Test
-    void deveCriarMidiaEmVinil() {
-        assertInstanceOf(MidiaVinil.class, fabrica.createMidia());
+    void deveCriarArtistaEmVinil() {
+        assertInstanceOf(ArtistaVinil.class, fabrica.createArtista());
     }
 
     @Test
-    void deveCriarCapaDeVinil() {
-        assertInstanceOf(CapaVinil.class, fabrica.createCapa());
+    void deveCriarBandaEmVinil() {
+        assertInstanceOf(BandaVinil.class, fabrica.createBanda());
     }
 }

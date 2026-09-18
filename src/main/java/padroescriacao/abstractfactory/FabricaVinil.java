@@ -3,12 +3,12 @@ package padroescriacao.abstractfactory;
 public class FabricaVinil implements FabricaAbstrata {
 
     @Override
-    public Midia createMidia() {
-        return new MidiaVinil();
+    public Artista createArtista() {
+        return new ArtistaVinil();
     }
 
     @Override
-    public Capa createCapa() {
-        return new CapaVinil();
+    public Banda createBanda() {
+        return new BandaVinil();
     }
 }

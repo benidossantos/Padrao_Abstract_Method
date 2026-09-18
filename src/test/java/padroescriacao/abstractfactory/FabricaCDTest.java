@@ -9,12 +9,12 @@ class FabricaCDTest {
     private final FabricaAbstrata fabrica = new FabricaCD();
 
     @Test
-    void deveCriarMidiaEmCD() {
-        assertInstanceOf(MidiaCD.class, fabrica.createMidia());
+    void deveCriarArtistaEmCD() {
+        assertInstanceOf(ArtistaCD.class, fabrica.createArtista());
     }
 
     @Test
-    void deveCriarCapaDeCD() {
-        assertInstanceOf(CapaCD.class, fabrica.createCapa());
+    void deveCriarBandaEmCD() {
+        assertInstanceOf(BandaCD.class, fabrica.createBanda());
     }
 }

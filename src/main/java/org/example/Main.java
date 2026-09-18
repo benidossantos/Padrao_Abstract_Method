@@ -9,12 +9,12 @@ public class Main {
     public static void main(String[] args) {
         FabricaAbstrata fabricaVinil = new FabricaVinil();
         Loja lojaVinil = new Loja(fabricaVinil);
-        IO.println(lojaVinil.emitirMidia());
-        IO.println(lojaVinil.emitirCapa());
+        IO.println(lojaVinil.emitirArtista());
+        IO.println(lojaVinil.emitirBanda());
 
         FabricaAbstrata fabricaCD = new FabricaCD();
         Loja lojaCD = new Loja(fabricaCD);
-        IO.println(lojaCD.emitirMidia());
-        IO.println(lojaCD.emitirCapa());
+        IO.println(lojaCD.emitirArtista());
+        IO.println(lojaCD.emitirBanda());
     }
 }

@@ -1,8 +1,8 @@
 package padroescriacao.abstractfactory;
 
-public class CapaCD implements Capa {
+public class BandaCD implements Banda {
 
     public String emitir() {
-        return "Capa de CD";
+        return "Banda lançada em CD";
     }
 }
